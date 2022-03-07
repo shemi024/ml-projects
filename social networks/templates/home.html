@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <title>Iris</title>
+      <link rel="stylesheet" href="static/CSS/style.css">
+</head>
+
+<body >
+      <form action="{{ url_for('predict')}}" method="post" id="input head">
+
+            <label for="gen">GENDER:</label>
+            <select name="gen" id="gen">
+                  <option value=0>female</option>
+                  <option value=1>male</option>
+            </select><br><br>
+            <h3 id="input">Age</h3>
+            <input type="text" name="age" placeholder="age">
+            <br>
+            <h3 id="input">Salary</h3>
+            <input type="text" name="salary" placeholder="salary">
+            <br>
+
+            <br>
+
+            <button id="submit" type="submit">Submit</button>
+      </form>
+</body>
+
+</html>
