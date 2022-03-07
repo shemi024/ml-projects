@@ -1,0 +1,19 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>Home prediction</title>
+    <link rel="stylesheet" href="static/CSS/style.css">
+<body  background="static/images/background1.jpg">
+</head>
+<!--Input From-->
+<div class="input form">
+    <form action="{{url_for('predict')}}"method="post" id="input head">
+      <h1 id="heading">Homprices prediction</h1>
+      <h3 id="input">Enter your area </h3>
+      <input type="text" name="Area" placeholder="Enter your area">
+      <br>
+      <button id="submit" type="submit">Submit</button>
+     </form>
+</div>
+</body>
+</html>
