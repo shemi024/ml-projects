@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <title>Healcare</title>
+      <link rel="stylesheet" href="static/CSS/style.css">
+</head>
+
+<body background="static/images/health.jpg">
+      <form action="{{ url_for('predict')}}" method="post" id="input head">
+
+            <label for="gen">GENDER:</label>
+            <select name="gen" id="gen"><br>
+                  <option value=0>female</option>
+                  <option value=1>male</option></select><br><br>
+                  
+            <input class="Age" type="age" name="age" placeholder="Age"><br><br>
+            
+            <label for="hyper">hypertension:</label>
+            <select name="hyper" id="hyper">
+                  <option value=0>No</option>
+                  <option value=1>Yes</option></select><br><br>
+                  
+            <label for="heart">heart_disease:</label>
+            <select name="heart" id="heart">
+                  <option value=0>No</option>
+                  <option value=1>Yes</option></select><br><br>
+            
+            <label for="eve">ever_married:</label>
+            <select name="eve" id="eve">
+                  <option value=0>No</option>
+                  <option value=1>Yes</option></select><br><br>
+                  
+           <label for="work">work_type:</label>
+           <select name="work" id="work">
+                 <option value=0>Govt_job</option>
+                 <option value=1>Never_worked</option>
+                 <option value=2>Private</option>
+                 <option value=3>Self_employed</option>
+                 <option value=4>Children</option></select><br><br>
+                 
+           <label for="resi">Residence_type:</label>
+           <select name="resi" id="resi">
+                 <option value=0>Rural</option>
+                 <option value=1>Urban</option><br></select><br><br>
+                 
+            <input class="number" type="number" name="avg_glucose_level" placeholder="avg_glucose_level"><br>
+            <input class="number" type="number" name="bmi" placeholder="bmi"><br>
+            
+                
+            <label for="smoking">smoking_status:</label>
+            <select name="smoking" id="smoking">
+                  <option value=0>Unknow</option>
+                  <option value=1>formaly smoked</option>
+                  <option value=2>Never smoked</option>
+                  <option value=3>Smoke</option></select><br><br>
+            
+             
+            <button id="submit" type="submit">Submit</button>
+      </form>
+</body>
+
+</html>
